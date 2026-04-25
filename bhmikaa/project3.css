@@ -1,0 +1,131 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.main
+{
+    width: 60%;
+    height: 1600px;
+    margin: auto;
+    border: 5px solid black;
+    text-transform: capitalize;
+}
+.cover img
+{
+    height: 200px;
+    width: 100%;
+}
+.one
+{
+    height: 80px;
+    width: 100%;
+    border: 2px solid black;
+}
+.one h2
+{
+    margin-top: 20px;
+    display: inline-block;
+}
+select
+{
+    float: right;
+    height: 30px;
+    width: 200px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px; ;
+}
+.img
+{
+    height: 410px;
+    width: 23%;
+    border: 1px solid black;
+    /* background-color: aqua; */
+    float: left;
+   margin: 1% 1% 1% 1% ;
+   border-radius: 10px;
+    /* background-color: thistle; */
+
+
+}
+.img img
+{
+    height: 200px;
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+h3
+{
+    background-color: green;
+    width: 20%;
+    height: 25px;
+    color: white;
+    margin:1%;
+    border-radius: 5px;
+    text-align: center;
+}
+h4
+{
+    background-color: red;
+     width: 20%;
+    height: 20px;
+    color: white;
+    margin:1%;;
+    border-radius: 5px;
+    text-align: center;
+}
+h5
+{
+    background-color: red;
+     width: 40%;
+    height: 20px;
+    color: white;
+    margin:1%;;
+    border-radius: 5px;
+    text-align: center;
+}
+h1
+{
+    color: white;
+    width: 40%;
+    height: 20px;
+}
+h6
+{
+    color: gray;
+    font-size: medium;
+    margin: 10% 0 1% 2%;
+}
+p
+{
+    font-size: larger;
+    margin: 2%;
+}
+.icon
+{
+    height: 10px;
+    margin: 10px 0 0 5%;
+}
+.btn 
+{
+   
+    width: 80%;
+    margin: auto;
+}
+b
+{
+    margin-top: 10%;
+    float: left;
+}
+a
+{
+    float: right;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: green;
+}

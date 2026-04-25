@@ -1,0 +1,57 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.one
+{
+    width: 300px;
+    height: 400px;
+    background-color: silver;
+    margin-top: 50px;
+}
+.aa
+{
+    width: 200px;
+    height: 200px;
+    border: 20px solid blue;
+    margin: 100px 50px;
+}
+.two
+{
+    width: 300px;
+    height: 400px;
+    border: 5px solid blue;
+    background-color: silver; 
+    margin-left: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    padding:20px;
+}
+.ab
+{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    border-radius: 10px;
+}
+.cd
+{
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        margin: 10px 50px 10px 50px;
+}
+h4
+{
+     text-transform: capitalize;
+     font-family: Arial, Helvetica, sans-serif;
+}
+p
+{
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 10px;
+     font-size: 15px;
+}
