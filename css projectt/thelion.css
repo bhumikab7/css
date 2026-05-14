@@ -1,0 +1,756 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+.transparent
+{
+    height: 200px;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    text-transform: uppercase;
+    z-index: 1000;
+    position: fixed;
+}
+.logo
+{
+    height: 150px;
+    width: 20%;
+}
+.logo img
+{
+    height: 120px;
+    width: 100%;
+}
+.menu
+{
+    width: 60%;
+    height: 45px;
+    margin:20px 10px;
+}
+.menu ul
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+.menu ul li
+{
+    list-style: none;
+    padding: 35px 15px;
+    font-size: 18px;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover
+{
+    color: sandybrown;
+    transition: 0.2s;
+}
+.submenu
+{
+    width: 280px;
+    height: 80px;
+    background-color:rgb(4, 39,63);
+    position: absolute;
+    visibility: hidden;
+    top: 55%;
+    /* z-index: 99; */
+    padding: 20px 15px;
+}
+.submenu ul li
+{
+    font-size: 15px;
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 15px;
+}
+.submenu ul li a
+{
+    width: 100%;
+    position: relative; 
+    padding: 25px 10px;
+}
+.menu .room:hover .submenu
+{
+    visibility: visible;
+    transition: 0.8s;
+}
+.submenu  li a::before
+ {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: -5px;
+    top: 30px;
+    transition: 0.2s;
+ }
+ .submenu  li a:hover::before
+ {
+    content: '';
+    position: absolute;
+    border: 1px solid sandybrown;
+    width: 4%;
+    left: -5px;
+    top: 30px;
+ }
+
+.book
+{
+    height: 10px;
+    position: relative;
+    top: 50%;
+}
+.book a
+{
+    padding: 15px 50px;
+    text-align: center;
+    background-color:  sandybrown;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.book a:hover
+{
+    background-color: white;
+    color: sandybrown;
+}
+.image
+{
+    height: 800px;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(360deg,black,rgba(480, 34, 34, 0)), url('https://www.thelionlodge.in/public/frontend/assets/img/gallery2/pool_garden/Gardan5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+.text
+{
+    height: 100px;
+    width: 40%;
+    margin: 0% 30%;
+    position: relative;
+}
+.text h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 350px;
+    left: 10%;
+}
+.rooms
+{
+    height: 120px;
+    width: 60%;
+
+background: rgba(7, 61, 86, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(7, 61, 86, 0.3);
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    color: white;
+    /* background-color: aquamarine; */
+    border: 1px solid white;
+    justify-content: space-between;
+    display: flex;
+}
+
+.check
+{
+    width: 30%;
+    margin-left: 20px;
+}
+.cheq
+{
+    width: 100%;
+    height: 50px;
+}
+.bookin
+{
+    height: 180px;
+    width: 100%;
+    display: flex;
+}
+.cheq h3
+{
+    text-align: center;
+}
+.in
+{
+    height: 150px;
+    width: 50%;
+    color: white; 
+}
+.out
+{
+    height: 150px;
+    width: 50%;
+    color: white;
+}
+.out input
+{
+    border-bottom: 0%;
+    box-shadow: 0%;
+    color: white;
+      background-color: transparent;
+}
+.in input
+{
+    background-color: transparent;
+    border-bottom: 0%;
+    color: white;
+}
+.bookroom
+{
+    width: 30%;
+    height: 100%;   
+}
+.bookr
+{
+ text-align: center;
+}
+.typetext
+{
+    position: relative;
+    top: 30px;
+    /* color: black; */
+    /* background-color: transparent; */
+}
+
+.available
+{
+    width: 33%;
+    height: 100%;
+}
+.available a
+{
+    text-decoration: none;
+    color: white;
+    background-color: sandybrown;
+    padding: 20px 70px;
+    position: relative;
+    top: 50px;
+    left: 15px;
+    font-size: 20px;
+}
+.available a:hover
+{
+    background-color: orange;
+}
+.pool 
+{
+    width: 85%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.photo
+{
+    height: 100px;
+    width: 120px;
+}
+.photo img
+{
+    width: 80px;
+    height: 80px;
+   
+}
+.photo p
+{
+    width: 100%;
+    height: 15px;
+}
+.reservation
+{
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    background-color :rgb(4, 39,63);
+    display: flex;
+}
+.discover
+{
+    width: 50%;
+    height: 500px;
+    color: white;
+    padding: 5%;
+}
+.discover h1
+{
+    padding: 10px;
+}
+.discover p
+{
+    padding: 10px;
+}
+.life
+{
+    display: flex;
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.life img
+{
+    width: 80px;
+    height: 80px;
+}
+.contact 
+{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.back 
+{
+    width: 100%;
+    height: 100%;
+}
+.back img
+{
+    width: 100%;
+    height: 100%;
+}
+.number
+{
+    height: 120px;
+    width: 40%;
+    background-color: rgb(207, 171, 127);
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+}
+.call
+{
+    width: 25%;
+    height: 100%;
+    font-size: 60px;
+}
+.call i
+{
+    color: rgb(12, 35, 58);
+}
+.phone
+{
+    width: 75%;
+    height: 100%;
+}
+.reserve
+{
+    margin: 15px 0px;
+    color: black
+}
+.reserve p
+{
+    font-size: 20px;
+}
+.reserveb
+{
+    width: 100%;
+}
+.reserveb p
+{
+    font-size: 25px;
+}
+.reserveb p:hover
+{
+    color: white;
+}
+.cottage
+{
+    width: 93%;
+    height: 650px;
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+}
+.a
+{
+    text-transform: uppercase;
+}
+.b p
+{
+    color: sandybrown;
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+    right: 10%;
+    top: 12px;
+}
+.c
+{
+    width: 95%;
+    height: 50px;
+    margin: auto;
+    text-align: justify;
+}
+.top
+{
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+}
+.top p
+{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.royals
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.royal
+{
+    width: 50%;
+    height: 500px;
+}
+.royal img
+{
+    height: 100%;
+    width: 100%;
+}
+.safari
+{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.pictures
+{
+    height: 100%;
+    width: 100%;
+}
+.row
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin: 30px 20px;
+    align-items: center;
+    text-align: center;
+}
+.luxurious
+{
+    height: 62px;
+    width:100px;
+    /* background-color: aqua; */
+    margin:0px 10px ;
+}
+.luxurious p
+{
+    font-size: 11px;
+}
+.pictures a
+{
+    border:1px solid rgb(233, 214, 179);
+    padding: 15px 30px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.readmore
+{
+    width: 180px;
+    height: 50px;
+}
+.readmore a
+{
+    border: 1px solid sandybrown;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase ;
+    padding: 10px 20px;
+}
+.readmore a:hover
+{
+    background-color: sandybrown;
+    transition: 0.7s;
+}
+
+.garden
+{
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+.exclusive
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+.abc p
+{
+    color: sandybrown;
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    padding: 15px;
+}
+.details
+{
+    width: 95%;
+    height: 100px;
+    margin: auto;
+}
+.guest
+{
+    width: 50%;
+    height: 600px;
+}
+.connection
+{
+    height:100%;
+    width: 50%;
+}
+.connection img
+{
+    height: 100%;
+    width: 100%;
+}
+.serve
+{
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+}
+.our
+{
+    width: 100%;
+    height: 50px;
+    /* background-color: green; */
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.serve .service
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.pic
+{
+    width:25%;
+    height: 100%;
+    margin: 0px 10px;
+    position: relative;
+}
+.pic img
+{
+    width: 100%;
+    height: 100%;
+}
+.float
+{
+    width: 180px;
+    height: 40px;
+    background-color: sandybrown;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.float p
+{
+    text-transform: uppercase;
+    padding: 10px 15px;
+    /* color: white; */
+    font-size: 20px;
+}
+.gallary
+{
+    height: 1500px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.topp
+{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: blueviolet; */
+}
+.end
+{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallaryimage
+{
+    width: 33%;
+    height: 350px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.gallaryimage img
+{
+    height: 100%;
+    width:100%;
+    transition: 0.8s;
+}
+
+.gallaryimage:hover img
+{
+   transform: scale(1.2);         
+}
+.footer
+{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(4, 39, 63);
+       justify-content: space-evenly;
+       display: flex;
+}
+
+.part
+{
+    height: 100%;
+    width: 25%;
+    display: block;
+   
+}
+.part2
+{
+    height: 100%;
+    width: 32%;
+    display: block;
+    color: white
+}
+.part3
+{
+    height: 100%;
+    width: 30%;
+    display: block;
+    color: white;
+}
+.footerlogo
+{
+    height: 50%;
+    width: 80%;
+    /* margin: auto; */
+}
+.footerlogo img
+{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.part .slogun
+{
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 15px;
+    color: white;
+}
+
+.up
+{
+    height: 60px;
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.down 
+{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-transform: capitalize;
+}
+.one
+{
+    margin-right: 10%;
+    font-size: 18px;
+}
+.one p
+{
+    margin: 10px;
+}
+.three
+{
+    font-size: 25px;
+    color: white;
+    word-spacing: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.four
+{
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+}
+.four i
+{
+    margin-right: 30px ;
+}
+.four a
+{
+ text-decoration: none;
+ color: white;
+}
+.foot
+{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(4, 39, 63);
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+.foot div
+{
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+    color: white;
+}
+.foot i
+{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: larger;
+    padding: 10px;
+    margin-right: 10%;
+    color: sandybrown;
+}
+.foot i:hover
+{
+    background-color: bisque;
+}
